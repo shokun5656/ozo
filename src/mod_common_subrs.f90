@@ -153,8 +153,8 @@ contains
                -f(:,:,k+2)
           dfdp(:,:,k)=dfdp(:,:,k)/(12.*dp)
        enddo
-       dfdp(:,:,2)=(dfdp(:,:,3)-dfdp(:,:,1))/(2.*dp)
-       dfdp(:,:,nlev-1)=(dfdp(:,:,nlev)-dfdp(:,:,nlev-2))/(2.*dp)
+       dfdp(:,:,2)=(f(:,:,3)-f(:,:,1))/(2.*dp)
+       dfdp(:,:,nlev-1)=(f(:,:,nlev)-f(:,:,nlev-2))/(2.*dp)
        dfdp(:,:,1)=(f(:,:,2)-f(:,:,1))/dp
        dfdp(:,:,nlev)=(f(:,:,nlev)-f(:,:,nlev-1))/dp
 
